@@ -1,1 +1,15 @@
+title{
+    display: flex;
+    align-items: flex-end;
+}
 
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
