@@ -1,8 +1,3 @@
-title{
-    display: flex;
-    align-items: flex-end;
-}
-
 .logo-title {
     display: flex;
     align-items: center;
@@ -15,6 +10,7 @@ title{
 
 body{
     margin-top: 80px;
+    background-color: lightgray;
 }
 
 .header {
@@ -22,16 +18,52 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    background: white;
+    background: black;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
+    padding: 10px 40px;
+}
 
+nav{
+    display: flex;
+    gap: 15px;
+}
+
+nav a:hover{
+    background-color: #0056b3;
 }
 
 nav a{
     margin-left: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 8px;
+    padding: 8px 14px;
+    transition: background 0.3s;
+}
+nav a.active{
+    background-color: #0056b3;
+    color: white;
     font-weight: bold;
+    padding: 8px 14px;
+}
+
+.paragraph-for-main-page{
+    font-family: serif;
+    font-weight: bold;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 120px;
+}
+
+section img{
+    max-width: 100%;
+    height: auto;
 }
