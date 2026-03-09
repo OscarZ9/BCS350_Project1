@@ -10,6 +10,28 @@ title{
 }
 
 .logo-img {
-    height: 50px;
-    width: auto;
+    height: 60px;
+}
+
+body{
+    margin-top: 80px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+}
+
+nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
