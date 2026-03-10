@@ -23,6 +23,8 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px;
+    box-sizing: border-box;
+
 }
 
 nav{
@@ -53,17 +55,28 @@ nav a.active{
 .paragraph-for-main-page{
     font-family: serif;
     font-weight: bold;
+    max-width: 400px;
 }
 
 section{
+    border-bottom: 1px solid #ddd;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
-    padding-top: 120px;
+    gap: 60px;
+    padding: 120px 40px;
 }
 
 section img{
     max-width: 100%;
     height: auto;
+}
+
+.makeBigger{
+    width: auto;
+    transition: transform 0.3s ease;
+}
+.makeBigger:hover{
+    transform: scale(1.1);
 }
