@@ -1,18 +1,27 @@
-.logo-title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+* {
+    box-sizing: border-box;
 }
 
-.logo-img {
-    height: 60px;
-}
-
-body{
+/* General */
+body {
     margin-top: 80px;
     background-color: lightgray;
 }
 
+section {
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    padding: 120px 40px;
+}
+
+section img {
+    height: auto;
+}
+
+/* Header */
 .header {
     position: fixed;
     top: 0;
@@ -23,20 +32,25 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px;
-    box-sizing: border-box;
-
 }
 
-nav{
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 60px;
+}
+
+/* Navigation */
+nav {
     display: flex;
     gap: 15px;
 }
 
-nav a:hover{
-    background-color: #0056b3;
-}
-
-nav a{
+nav a {
     margin-left: 20px;
     text-decoration: none;
     color: white;
@@ -45,71 +59,91 @@ nav a{
     padding: 8px 14px;
     transition: background 0.3s;
 }
-nav a.active{
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+nav a.active {
     background-color: #0056b3;
     color: white;
     font-weight: bold;
-    padding: 8px 14px;
 }
 
-.paragraph-for-main-page{
+/* Home page */
+.paragraph-for-main-page {
     font-family: serif;
     font-weight: bold;
-    max-width: 400px;
+    max-width: 600px;
 }
 
-section{
-    border-bottom: 1px solid black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 60px;
-    padding: 120px 40px;
-}
-
-section img{
-    max-width: 300px;
-    height: auto;
-}
-
-.makeBigger{
+.makeBigger {
     width: auto;
     transition: transform 0.3s ease;
 }
-.makeBigger:hover{
+
+.makeBigger:hover {
     transform: scale(1.1);
 }
 
-.ProductSection{
+.homeSection {
     display: flex;
-    gap: 60px;
-    padding: 120px 60px
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 120px 60px;
 }
 
-.ProductLeft{
-    width: 40%;
-}
-
-.ProductLeft img{
+.homeSection img {
     width: 100%;
-    max-width: 450px;
+    max-width: 700px;
+    height: auto;
 }
 
-.ProductRight{
-    width: 60%;
+.homeText {
+    max-width: 500px;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.5;
 }
 
-.ProductRight h1{
+.homeFooter{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+/* Product page */
+.ProductSection {
+    display: flex;
+    gap: 100px;
+    padding: 120px 80px;
+}
+
+.ProductLeft {
+    width: 50%;
+}
+
+.ProductLeft img {
+    width: 100%;
+    max-width: 650px;
+}
+
+.ProductRight {
+    width: 50%;
+}
+
+.ProductRight h1 {
     font-size: 48px;
     font-family: sans-serif;
 }
 
-.price{
+.price {
     font-size: 24px;
     margin-bottom: 30px;
 }
 
-.feature{
+.feature {
     font-size: 24px;
     font-family: sans-serif;
     font-weight: bold;
@@ -117,3 +151,104 @@ section img{
     border-top: 1px solid gray;
 }
 
+.darkSection{
+    background-color: black;
+    color: white;
+}
+
+.grayDivider{
+    background-color: #1c1c1e;
+    height: 140px;
+}
+
+.whiteDivider{
+    background-color: white;
+    height: 140px;
+}
+
+/* Genius Bar page */
+
+.appointmentSection{
+    margin-top: 120px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.appointmentForm{
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.appointmentForm label{
+    font-weight: bold;
+    color: #222;
+}
+
+.appointmentForm input, .appointmentForm select, .appointmentForm textarea{
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+
+.appointmentForm button{
+    background: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.appointmentForm button:hover{
+    background:#0056b3;
+}
+
+.appointmentForm textarea{
+    resize: vertical;
+    min-height: 100px;
+}
+
+.geniusContainer{
+    min-height: calc(100vh - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.geniusText{
+    max-width: 450px;
+}
+
+.geniusText h1{
+    font-size: 52px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.geniusText p{
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+#confirmation{
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+    font-size: 14px;
+}

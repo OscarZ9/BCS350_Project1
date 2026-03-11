@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Style.css">
-    <title>Apple Store</title>
+    <title>Genius Bar | Apple Store</title>
 </head>
 <body>
 <header class="header">
@@ -17,10 +17,54 @@
     </nav>
 
 </header>
+<section class = "geniusContainer">
+    <div class = "geniusText">
+        <h1>Make an appointment</h1>
+        <p>Get help from an Apple expert at the Genius Bar. Select a date and describe your issue.</p>
+    </div>
+        <form class = "appointmentForm">
 
+        <label>Full Name</label>
+        <input type = "text" required>
 
+        <label>Email</label>
+        <input type = "email" required>
 
+        <label>Select Device</label>
+        <select>
+            <option>iPhone</option>
+            <option>MacBook</option>
+            <option>Apple Watch</option>
+            <option>AirPods</option>
+        </select>
 
+        <label>Appointment Date</label>
+        <input type = "date" required>
+
+        <label>Appointment Time</label>
+        <input type = "time" required>
+
+        <label>Describe the Issue</label>
+        <textarea rows = "4"></textarea>
+
+        <button type = "submit">Book Appointment</button>
+            <p id = "confirmation"></p>
+    </form>
+</section>
+
+<footer class = "footer">
+    © 2026 Apple Store. All rights reserved.
+</footer>
+
+<script>
+    document.querySelector(".appointmentForm").addEventListener("submit", function(e){
+        e.preventDefault();
+        document.getElementById("confirmation").innerText =
+            "Your Genius Bar appointment has been successfully scheduled.";
+
+    });
+
+</script>
 
 </body>
 </html>
