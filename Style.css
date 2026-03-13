@@ -1,163 +1,183 @@
+/* Applying box-sizing to all elements so padding and borders are included in width/height */
 * {
     box-sizing: border-box;
 }
 
-/* General */
+/* General page styling */
 body {
-    margin-top: 80px;
-    background-color: #f5f5f7;
+    margin-top: 80px; /* Space for fixed header */
+    background-color: #f5f5f7; /* Light gray Apple style background */
 }
 
+/* Default section layout used across the site */
 section {
-    border-bottom: 1px solid black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 60px;
-    padding: 120px 40px;
+    border-bottom: 1px solid black; /* Divider between sections */
+    display: flex; /* Flex layout for content alignment */
+    flex-direction: row; /* Elements appear side by side */
+    align-items: center; /* Vertical alignment */
+    gap: 60px; /* Space between elements */
+    padding: 120px 40px; /* Space inside sections */
 }
 
+/* Default styling for images inside sections */
 section img {
-    height: auto;
+    height: auto; /* Maintain image proportions */
 }
 
-/* Header */
+/* Header navigation bar */
 .header {
-    position: fixed;
+    position: fixed; /* Keeps header fixed at top when scrolling */
     top: 0;
     left: 0;
-    width: 100%;
-    background: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 40px;
+    width: 100%; /* Full width navigation bar */
+    background: black; /* Black Apple style navigation */
+    display: flex; /* Flex layout for logo and menu */
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Vertical alignment */
+    padding: 10px 40px; /* Internal spacing */
 }
 
+/* Logo container layout */
 .logo-title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    display: flex; /* Align logo and title */
+    align-items: center; /* Vertical alignment */
+    gap: 10px; /* Space between logo and text */
 }
 
+/* Apple logo styling */
 .logo-img {
-    height: 60px;
+    height: 60px; /* Fixed logo height */
 }
 
-/* Navigation */
+/* Navigation menu container */
 nav {
-    display: flex;
-    gap: 15px;
+    display: flex; /* Horizontal navigation layout */
+    gap: 15px; /* Space between navigation items */
 }
 
+/* Navigation link styling */
 nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: white;
-    font-family: sans-serif;
-    border-radius: 8px;
-    padding: 8px 14px;
-    transition: background 0.3s;
+    margin-left: 20px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text for contrast */
+    font-family: sans-serif; /* Clean font */
+    border-radius: 8px; /* Rounded corners */
+    padding: 8px 14px; /* Space inside links */
+    transition: background 0.3s; /* Smooth hover effect */
 }
 
+/* Navigation hover effect */
 nav a:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Blue hover color */
 }
 
+/* Active page link styling */
 nav a.active {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Highlight current page */
     color: white;
-    font-weight: bold;
+    font-weight: bold; /* Emphasize active page */
 }
 
-/* Home page */
+/* Home page text styling */
 .paragraph-for-main-page {
-    font-family: serif;
+    font-family: serif; /* Serif font for description text */
     font-weight: bold;
-    max-width: 600px;
+    max-width: 600px; /* Limit text width for readability */
 }
 
+/* Product image hover animation */
 .makeBigger {
-    width: auto;
-    transition: transform 0.3s ease;
+    width: auto; /* Automatic width */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
 }
 
+/* Image grows slightly when hovered */
 .makeBigger:hover {
     transform: scale(1.1);
 }
 
+/* Home page product sections layout */
 .homeSection {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    padding: 120px 60px;
+    display: flex; /* Flex layout */
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Center content */
+    gap: 80px; /* Space between image and text */
+    padding: 120px 60px; /* Section spacing */
 }
 
+/* Home page images */
 .homeSection img {
-    width: 100%;
-    max-width: 700px;
-    height: auto;
+    width: 100%; /* Responsive width */
+    max-width: 700px; /* Maximum image size */
+    height: auto; /* Maintain proportions */
 }
 
+/* Text description next to product images */
 .homeText {
-    max-width: 500px;
-    font-family: serif;
+    max-width: 500px; /* Limit text width */
+    font-family: serif; /* Serif font */
     font-weight: bold;
-    font-size: 24px;
-    line-height: 1.5;
+    font-size: 24px; /* Large readable text */
+    line-height: 1.5; /* Improve readability */
 }
 
-
-
-/* Product page */
+/* Product page section layout */
 .ProductSection {
-    display: flex;
-    gap: 100px;
-    padding: 120px 80px;
+    display: flex; /* Two column layout */
+    gap: 100px; /* Space between columns */
+    padding: 120px 80px; /* Section spacing */
 }
 
+/* Left side of product section (image area) */
 .ProductLeft {
-    width: 50%;
+    width: 50%; /* Half page width */
 }
 
+/* Product images */
 .ProductLeft img {
-    width: 100%;
-    max-width: 650px;
+    width: 100%; /* Responsive image */
+    max-width: 650px; /* Maximum image size */
 }
 
+/* Right side of product section (text area) */
 .ProductRight {
-    width: 50%;
+    width: 50%; /* Half page width */
 }
 
+/* Product title styling */
 .ProductRight h1 {
-    font-size: 48px;
+    font-size: 48px; /* Large product title */
     font-family: sans-serif;
 }
 
+/* Product price styling */
 .price {
     font-size: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Space below price */
 }
 
+/* Product feature descriptions */
 .feature {
     font-size: 24px;
     font-family: sans-serif;
     font-weight: bold;
-    padding: 25px 0;
-    border-top: 1px solid gray;
+    padding: 25px 0; /* Space above and below feature text */
+    border-top: 1px solid gray; /* Divider between features */
 }
 
+/* Dark theme sections used in product pages */
 .darkSection{
-    background-color: black;
-    color: white;
+    background-color: black; /* Dark background */
+    color: white; /* White text */
 }
 
+/* Gray divider between product sections */
 .grayDivider{
     background-color: #1c1c1e;
-    height: 140px;
+    height: 140px; /* Visual spacing divider */
 }
 
+/* White divider used for spacing */
 .whiteDivider{
     background-color: white;
     height: 140px;
@@ -165,69 +185,80 @@ nav a.active {
 
 /* Genius Bar page */
 
+/* Appointment section title styling */
 .appointmentSection{
-    margin-top: 120px;
-    text-align: center;
+    margin-top: 120px; /* Space below header */
+    text-align: center; /* Center text */
     font-family: sans-serif;
 }
 
+/* Appointment form container */
 .appointmentForm{
-    width: 400px;
-    margin: auto;
+    width: 400px; /* Fixed form width */
+    margin: auto; /* Center form horizontally */
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 10px; /* Space between inputs */
 }
 
+/* Form label styling */
 .appointmentForm label{
     font-weight: bold;
-    color: #222;
+    color: #222; /* Dark text color */
 }
 
+/* Input fields, dropdowns and text areas */
 .appointmentForm input, .appointmentForm select, .appointmentForm textarea{
     padding: 10px;
-    border-radius: 6px;
+    border-radius: 6px; /* Rounded inputs */
     border: 1px solid gray;
 }
 
+/* Submit button styling */
 .appointmentForm button{
     background: black;
     color: white;
     padding: 10px;
     border: none;
     border-radius: 6px;
-    cursor: pointer;
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
+/* Button hover effect */
 .appointmentForm button:hover{
     background:#0056b3;
 }
 
+/* Textarea resizing behavior */
 .appointmentForm textarea{
-    resize: vertical;
-    min-height: 100px;
+    resize: vertical; /* Allow vertical resize only */
+    min-height: 100px; /* Minimum height */
 }
 
+/* Genius Bar layout container */
 .geniusContainer{
-    min-height: calc(100vh - 140px);
+    min-height: calc(100vh - 140px); /* Fill screen height */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 100px; /* Space between text and form */
     padding: 40px;
     box-sizing: border-box;
 }
 
+/* Genius Bar description text */
 .geniusText{
     max-width: 450px;
 }
 
+/* Genius Bar title styling */
 .geniusText h1{
     font-size: 52px;
     margin-bottom: 15px;
     color: black;
 }
 
+/* Genius Bar paragraph styling */
 .geniusText p{
     font-size: 20px;
     color: #333;
@@ -235,13 +266,15 @@ nav a.active {
     margin-bottom: 25px;
 }
 
+/* Confirmation message after form submission */
 #confirmation{
     margin-top: 10px;
-    color: green;
+    color: green; /* Success message color */
     font-weight: bold;
     text-align: center;
 }
 
+/* Footer styling */
 .footer{
     margin-top: 30px;
     padding: 25px;
@@ -252,10 +285,12 @@ nav a.active {
     color: #555;
 }
 
+/* Footer links styling */
 .footer a{
-    text-decoration: none;
+    text-decoration: none; /* Remove underline */
 }
 
+/* Footer link hover effect */
 .footer a:hover{
     text-decoration: underline;
 }
