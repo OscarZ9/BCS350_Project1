@@ -16,41 +16,43 @@ PART 1: CONTENT (Answer ALL questions, add your own if necessary)
 
 1. What is the name of your business? Apple Store.
 
-3. Is the business real or fictional? It is real.
+2. Is the business real or fictional? It is real.
 
-5. What products or services does the business offer?
+3. What products or services does the business offer?
 It offers phones, computers, airbuds, watches, Reapairs at the Genious Bar. 
 Who is the target audience? Poeple who wants to buy a new device for their own.
 
-9. What problem does this business solve?
+4. Who is the target audience?
+The target is for people who are loocking for buy a new device and to get more information about Apple products.
+
+5. What problem does this business solve?
 Apple Store helps people to figure out relieable devices for everyday use.
 
-11. What makes this business unique compared to competitors?
+6. What makes this business unique compared to competitors?
 Apple Store gives high technology that works together in the same ecosystem.
 
-13. What pages will your website include (e.g., Home, About, Services, Contact)?
+7. What pages will your website include (e.g., Home, About, Services, Contact)?
 Home – overview of Apple products and promotions
 Products – displays iPhones, Macs, Apple Watches, and AirPods
 Services – information about the Genius Bar and repairs
-About – information about Apple and its history
-Contact – store location, hours, and a contact form
+About, contact - I added about and contact in the footer section. showing all legal information, such as copyright, Terms and Use, Phone number, locations.
 
-15. Write a short mission statement for the business.
+8. Write a short mission statement for the business.
 The mission of the Apple Store is to provide innovative technology products and excellent customer service.
 
-17. What tone should the website content have (professional, friendly, modern, etc.)?
+9. What tone should the website content have (professional, friendly, modern, etc.)?
 The tone of the website should be modern, professional, and simple. Apple is known for clean design and clear communication, so the content should be easy to read and visually appealing.
 
-19. What call-to-action do you want visitors to take?
+10. What call-to-action do you want visitors to take?
 The main call-to-action is for visitors to explore products and purchase Apple devices, or schedule an appointment at the Genius Bar for support or repairs.
 
-21. What information must be immediately visible on the homepage?
+11. What information must be immediately visible on the homepage?
 - Featured Apple products (iPhone, Mac, Apple Watch)
 - Navigation menu to explore the website
 - Current promotions or new product releases
 - A button to shop products or book a Genius Bar appointment
 
-23. Will the site include images, videos, or other media? Why?
+12. Will the site include images, videos, or other media? Why?
 Yes, the website will include images and videos of Apple products. Visual media helps users better understand the design and features of the devices. It also makes the website more attractive and engaging for visitors.
 
 --------------------------------------------------
@@ -59,14 +61,14 @@ PART 2: DESIGN (Answer ALL questions, add your own if necessary)
 1. What overall style will the website have (minimalist, corporate, creative, etc.)?
 The Website will follow a minimalist and modern style. It would be similar to the original Apple Store's website.
 
-3. What color scheme will you use and why?
+2. What color scheme will you use and why?
 The color I will use are white, black and some light gray. This colors will reflect Apple's branding and create a clean and professional appearance. White will improve readability and black and gray will provide contrast for text navigation.
 
-4. What fonts will you use for headings and body text?
+3. What fonts will you use for headings and body text?
 - Heading: bold sans-serif fonts to meke titles stand out.
 - Body text: simple sans-serif fonts for readability.
 
-5. How will spacing and layout improve readability?
+4. How will spacing and layout improve readability?
 Spacing will be use to separate sections, text, and images. this will help to improve readability and helps users to see all the information quickly.
 
 6. What visual hierarchy will guide the user’s attention?
