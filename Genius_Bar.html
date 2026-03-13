@@ -6,10 +6,14 @@
     <title>Genius Bar | Apple Store</title>
 </head>
 <body>
+
+<!-- header with navigation menu -->
 <header class="header">
 
+    <!-- I tried to display the logo at the logo at the navigation menu but it did not worked -->
     <img src="Pictures/Apple-Logo-White.png" alt="Logo" class="logo-img">
 
+    <!-- navigation links to other pages -->
     <nav>
         <a href="Home_Page.html">Home</a>
         <a href="Products.html">Products</a>
@@ -17,19 +21,28 @@
     </nav>
 
 </header>
+
+<!-- Main Genius Bar section -->
 <section class = "geniusContainer">
+
+    <!-- Text displaying the purpose of the page -->
     <div class = "geniusText">
-        <h1>Make an appointment</h1>
+        <h1>Make an appointment</h1> <--! Section title -->
         <p>Get help from an Apple expert at the Genius Bar. Select a date and describe your issue.</p>
     </div>
-        <form class = "appointmentForm">
 
+        <!-- Appointment form -->
+    <form class = "appointmentForm">
+
+        <!-- User name input -->
         <label>Full Name</label>
         <input type = "text" required>
 
+        <!-- Email input -->
         <label>Email</label>
         <input type = "email" required>
 
+        <!-- Device selection dropdown -->
         <label>Select Device</label>
         <select>
             <option>iPhone</option>
@@ -38,26 +51,38 @@
             <option>AirPods</option>
         </select>
 
+        <!-- Appointment date -->
         <label>Appointment Date</label>
         <input type = "date" required>
 
+        <!-- Appointment time -->
         <label>Appointment Time</label>
         <input type = "time" required>
 
+        <!-- Text area to describe the problem -->
         <label>Describe the Issue</label>
         <textarea rows = "4"></textarea>
 
+        <!-- Submit button -->
         <button type = "submit">Book Appointment</button>
+
+            <!-- Confirmation message after submission -->
             <p id = "confirmation"></p>
     </form>
 </section>
 
+
+<!-- Footer with store information and links -->
 <footer class = "footer">
+
+    <!-- External links to Apple resources -->
     More ways to shop: Find an <a href = "https://www.apple.com" target = "_blank">Apple Store</a> or
     <a href = "https://locate.apple.com" target = "_blank">other retailer</a> near you. Or call 1-800-MY-APPLE (1-800-692-7753).
     <p>
         Copyright © 2026 Apple Inc. All rights reserved.
     </p>
+
+    <!-- Policy and legal links -->
     <a href= "https://www.apple.com/legal/privacy/" target="_blank">Privacy Policy </a>|
     <a href = "https://www.apple.com/legal/internet-services/terms/site.html" target = "_blank">Terms of Use</a> |
     <a href = "https://www.apple.com/legal/sales-support/sales-policies/retail_us.html" target = "_blank">Sales and Refunds</a> |
@@ -65,9 +90,15 @@
     <a href = "https://www.apple.com/sitemap/" target = "_blank">Site Map</a>
 </footer>
 
+
+<!-- JavaScript to handle form submission -->
 <script>
+
+    // Select the form and listen for submit event
     document.querySelector(".appointmentForm").addEventListener("submit", function(e){
-        e.preventDefault();
+        e.preventDefault(); // Prevent page reload after submission
+
+        // Show confirmation message
         document.getElementById("confirmation").innerText =
             "Your Genius Bar appointment has been successfully scheduled.";
 
